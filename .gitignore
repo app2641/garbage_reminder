@@ -1,0 +1,4 @@
+.DS_Store
+dist
+gapps.config.json
+node_modules
