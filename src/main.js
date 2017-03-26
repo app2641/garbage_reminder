@@ -25,7 +25,7 @@ function postTodaySchedule () {
 
   today_garbage = reminder.sheet.getTodayGarbage();
   if (today_garbage != '') {
-    var msg = '今日は'+today_garbage+'の日です';
+    var msg = '@channel 今日は'+today_garbage+'の日です';
     reminder.slack.post(msg);
   }
 };
@@ -35,7 +35,7 @@ function postTomorrowSchedule () {
 
   tomorrow_garbage = reminder.sheet.getTomorrowGarbage();
   if (tomorrow_garbage != '') {
-    var msg = '明日は'+tomorrow_garbage+'の日です';
+    var msg = '@channel 明日は'+tomorrow_garbage+'の日です';
     reminder.slack.post(msg);
   }
 };
