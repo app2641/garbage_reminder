@@ -1,4 +1,5 @@
 .DS_Store
+.envrc
 dist
 gapps.config.json
 node_modules
