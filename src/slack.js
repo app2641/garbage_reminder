@@ -11,7 +11,7 @@ loadSlackClient = function () {
   SlackClient.prototype.post = function (message) {
     var send_options = {
       method: 'post',
-      payload: {'payload': JSON.stringify({text: message})}
+      payload: {'payload': JSON.stringify({text: message, link_names: true})}
     };
 
     UrlFetchApp.fetch(this.hooks_url, send_options);
